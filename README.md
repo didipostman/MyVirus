@@ -61,6 +61,6 @@ Conclusion :
 
 What is the solution to avoid this kind of exploit of this DOS command shutdown.
 Shall Microsoft Depricated it or shall keep it assuming security measurements in using it.
-The world wide security patch for Windows2000/XP/7/8/10/11 against shutdown vulnerability is to disable shutdown execution on Windows startup. To figure out the problem try to copy myVirus.bat in Windows startup and execute it please visit my Github
+The world wide security patch for Windows2000/XP/7/8/10/11 against shutdown vulnerability is to disable shutdown execution on Windows startup. To figure out the problem try to copy myVirus.bat in Windows startup and execute it.
 
  
