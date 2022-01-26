@@ -1,6 +1,6 @@
 rem author Wadï Mami 
 rem email : wmami@steg.com.tn
-rem to solve the problem visit https://myviruscode.blogspot.com/2021/07/the-patch-for-windows.html
+rem to solve the problem visit https://shutdownwindowssecuritythreat.blogspot.com/2021/08/shutdown-command-security-threat.html
 
 echo off 
 rem clean screen
