@@ -71,7 +71,9 @@ As you can see all high generation Languages can exploit this DOS command shutdo
 Conclusion :
 What is the solution to avoid this kind of exploit of this DOS command shutdown.
 Shall Microsoft Depricated it or shall keep it assuming security measurements in using it.
-I think the patch for all kind of Windows is to ask for account password anytime shutdown is invoked
+I think the patch for all kind of Windows is to ask for account password anytime shutdown is invoked.
+
+Just try to execute MyVirus.bat to figure out the problem !!!!
 
 
 https://github.com/didipostman/MyVirus
