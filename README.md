@@ -81,3 +81,4 @@ https://github.com/didipostman/MyVirus
 Shutdown: Allow system to be shut down without having to log on
 
  https://docs.microsoft.com/en-us/windows/security/threat-protection/security-policy-settings/shutdown-allow-system-to-be-shut-down-without-having-to-log-on
+The patch is to Ask yes or No  any Time shutdown is invoked.
